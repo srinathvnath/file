@@ -1,5 +1,4 @@
 #include<stdio.h>
-void sumpro(int,int,int*,int*);
 int main() {
   n=10;
   int arr[10];
