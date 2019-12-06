@@ -1,37 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
+int sum=0;
+int i,j;
+struct student 
+{
+  int rollno;
+  char name[20];
+  double total;
+  int age;
+};
+
 int main()
 {
-  float a[2][2], b[2][2], result[2][2];
-  // Taking input using nested for loop
-  printf("Enter elements of 1st matrix\n");
-  for (int i = 0; i < 2; ++i)
-    for (int j = 0; j < 2; ++j)
-    {
-      printf("Enter a%d%d: ", i + 1, j + 1);
-      scanf("%f", &a[i][j]);
-    }
-  // Taking input using nested for loop
-  printf("Enter elements of 2nd matrix\n");
-  for (int i = 0; i < 2; ++i)
-    for (int j = 0; j < 2; ++j)
-    {
-      printf("Enter b%d%d: ", i + 1, j + 1);
-      scanf("%f", &b[i][j]);
-    }
-  // adding corresponding elements of two arrays
-  for (int i = 0; i < 2; ++i)
-    for (int j = 0; j < 2; ++j)
-    {
-      result[i][j] = a[i][j] + b[i][j];
-    }
-  // Displaying the sum
-  printf("\nSum Of Matrix:");
-  for (int i = 0; i < 2; ++i)
-    for (int j = 0; j < 2; ++j)
-    {
-      printf("%.1f\t", result[i][j]);
-      if (j == 1)
-        printf("\n");
-    }
+ struct student sarr[10];
+ for(i=0;i<10;i++)
+   sarr[i].total=rand()%100;  //scanf("%d",&sarr[i].total);
+ for(j=0;j<10;j++)
+   sum+=sarr[j].total;
   return 0;
 }
