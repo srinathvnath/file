@@ -1,18 +1,14 @@
 #include <stdio.h>
-int fact(int x)
-{
-    int i,y=1;
-    for(i=1;i<=x;i++)
-    {
-        y=y*i;
-    }
-    return y;
-}
+
+int i;
 int main()
 {
-    int s,f;
+    int s;
     scanf("%d",&s);
-    f=fact(s);
+    for(i=1;i<=s;i++)
+    {
+        f=f*i;
+    }
     printf("Factorial of number %d is %d",s,f);
     return 0;
 }
