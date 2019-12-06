@@ -1,6 +1,5 @@
 #include<stdio.h>
-int sum=0;
-int i,j;
+
 struct student 
 {
   //int rollno;
@@ -12,6 +11,8 @@ struct student
 int main()
 {
  struct student sarr[10];
+ int sum=0;
+ int i,j;
  for(i=0;i<10;i++)
    sarr[i].total=rand()%100;  //scanf("%d",&sarr[i].total);
  for(j=0;j<10;j++)
