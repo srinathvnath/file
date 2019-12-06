@@ -3,10 +3,10 @@ int sum=0;
 int i,j;
 struct student 
 {
-  int rollno;
-  char name[20];
+  //int rollno;
+  //char name[20];
   double total;
-  int age;
+  //int age;
 };
 
 int main()
