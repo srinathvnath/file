@@ -1,7 +1,7 @@
 #include<stdio.h>
 void sumpro(int,int,int*,int*);
 int main() {
-  int n=10;
+  n=10;
   int arr[10];
   fill(arr,n);
   sumarr(arr,n);
